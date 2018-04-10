@@ -1,0 +1,4145 @@
+{
+  "version": 8,
+  "name": "ACS2016_5yr",
+  "sprite": "/sprite/sprite",
+  "glyphs": "/font/arial-regular/0-65535.pbf?fontstack={fontstack}&range={range}",
+  "color-palettes": "/json/color-palettes/us-demography-color-palettes.json",
+  "metadata": {
+    "socialexplorer": {
+      "id": "ACS2016_5yr",
+      "survey-name": "ACS2016_5yr",
+      "group-metadata-id": "CC5BE0AD-B874-B0ED-ACA5-17D1D678D84D",
+      "minzoom": 2,
+      "data-source-layers": [
+        {
+          "id": "2016_5yr_States_Data",
+          "geo-layer-id": "10451",
+          "summary-level": {
+            "id": "SL040",
+            "label": "State",
+            "title": "Data: States",
+            "minzoom": 1,
+            "maxzoom": 5
+          },
+          "datasets": [
+            {
+              "dataset-id": "29837",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30864",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_Counties_Data",
+          "geo-layer-id": "15294",
+          "summary-level": {
+            "id": "SL050",
+            "label": "County",
+            "title": "Data: Counties",
+            "minzoom": 5,
+            "maxzoom": 9
+          },
+          "datasets": [
+            {
+              "dataset-id": "29851",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30863",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_Tracts_Data",
+          "geo-layer-id": "1169",
+          "summary-level": {
+            "id": "SL140",
+            "label": "Census Tract",
+            "title": "Data: Census Tracts",
+            "minzoom": 9,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29838",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30871",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_Block_Groups_Data",
+          "geo-layer-id": "1171",
+          "summary-level": {
+            "id": "SL150",
+            "label": "Census Block Group",
+            "title": "Data: Census Block Group",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29839",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30918",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_ZCTA5_Data",
+          "geo-layer-id": "12362",
+          "summary-level": {
+            "id": "SL860",
+            "label": "ZIP Code (ZCTA5)",
+            "title": "Data: 5-Digit ZIP Code Tabulation Area (ZCTA5)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "30083",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30857",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_Place_Data",
+          "geo-layer-id": "11616",
+          "summary-level": {
+            "id": "SL160",
+            "label": "Census Place",
+            "title": "Data: Census Place",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29841",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30854",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_MSA_Data",
+          "geo-layer-id": "15663",
+          "summary-level": {
+            "id": "SL310",
+            "label": "MSA",
+            "title": "Data: Metropolitan Statistical Area (MSA)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "34126",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "34127",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_CD_Data",
+          "geo-layer-id": "15623",
+          "summary-level": {
+            "id": "SL500",
+            "label": "Cong. District (115th)",
+            "title": "Data: Congressional Districts (115th)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29972",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30859",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_PUMA_Data",
+          "geo-layer-id": "10461",
+          "summary-level": {
+            "id": "SL795",
+            "label": "PUMA",
+            "title": "Data: Public Use Microdata Area (PUMA)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29845",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30861",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_ELSD_Data",
+          "geo-layer-id": "10462",
+          "summary-level": {
+            "id": "SL950",
+            "label": "ELSD",
+            "title": "Data: Elementary School District (ELSD)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29846",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30858",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_SCSD_Data",
+          "geo-layer-id": "10463",
+          "summary-level": {
+            "id": "SL960",
+            "label": "SCSD",
+            "title": "Data: Secondary School District (SCSD)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29847",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30856",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_UNSD_Data",
+          "geo-layer-id": "10496",
+          "summary-level": {
+            "id": "SL970",
+            "label": "UNSD",
+            "title": "Data: Unified School District (UNSD)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29848",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30855",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_SLDU_Data",
+          "geo-layer-id": "10494",
+          "summary-level": {
+            "id": "SL610",
+            "label": "SLDU",
+            "title": "Data: State Legislative Districts Upper Chambers (SLDU)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29849",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30862",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        },
+        {
+          "id": "2016_5yr_SLDL_Data",
+          "geo-layer-id": "10495",
+          "summary-level": {
+            "id": "SL620",
+            "label": "SLDL",
+            "title": "Data: State Legislative Districts Lower Chambers (SLDL)",
+            "minzoom": 21,
+            "maxzoom": 21
+          },
+          "datasets": [
+            {
+              "dataset-id": "29850",
+              "dataset-abbreviation": "SE",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            },
+            {
+              "dataset-id": "30860",
+              "dataset-abbreviation": "ACS16_5yr",
+              "primary-key-column": "Geo_FIPS",
+              "geo-name-column": "Geo_Name",
+              "geo-qualified-name-column": "Geo_QName"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": {
+    "mapbox-satellite": {
+      "type": "raster",
+      "tileSize": 512,
+      "url": "mapbox://mapbox.satellite"
+    },
+    "socialexplorer": {
+      "type": "vector",
+      "tiles": [
+        "https://tiles3.socialexplorer.com/gettile/?x={x}&y={y}&z={z}&layers={layers}&projection=EPSG-3857&columns={columns}"
+      ],
+      "layers": [
+        {
+          "layerId": "1071p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "Name1"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10604",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10605",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10606",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10607",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10608",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10609",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10610",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10611",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "15623p",
+          "datasets": [
+            {
+              "datasetId": "29972",
+              "columns": [
+                "Geo_NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10482",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAME_1"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1038",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "CAPITAL"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1220",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "FeatureCla",
+                "Name"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1229",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "ADMIN",
+                "POP_EST"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1231",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "Name"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1388",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "TYPE",
+                "ADMIN",
+                "POP_EST"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10552",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "MTFCC",
+                "FULLNAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10526",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "MTFCC",
+                "FULLNAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10552p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "MTFCC",
+                "FULLNAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10526p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "MTFCC",
+                "FULLNAME"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "11616p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "Geo_QName"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "12362p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "ZCTA5CE10"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1169p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "NAMELSAD10"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "1171p",
+          "datasets": [
+            {
+              "datasetId": "13372",
+              "columns": [
+                "Geo_QName"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "15294p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "Geo_QName"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "10451p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "Geo_QName"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "534p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "ABBREV"
+              ]
+            }
+          ]
+        },
+        {
+          "layerId": "957p",
+          "datasets": [
+            {
+              "datasetId": "0",
+              "columns": [
+                "MTFCC",
+                "FULLNAME"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "id": "World_Landmass_Boundaries",
+      "source": "socialexplorer",
+      "source-layer": "10617",
+      "type": "fill",
+      "metadata": {
+        "socialexplorer": {
+          "title": "Landmass: World"
+        }
+      },
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(240,240,240)",
+        "fill-outline-color": "rgba(144,144,144,0.18)"
+      }
+    },
+    {
+      "id": "Data",
+      "type": "placeholder",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {}
+      }
+    },
+    {
+      "id": "US_Big_Lakes_Area_2010",
+      "source": "socialexplorer",
+      "source-layer": "14034",
+      "type": "fill",
+      "minzoom": 5,
+      "maxzoom": 12,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "US Water Area",
+          "title": "US Water Area (2010)"
+        }
+      },
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(255,255,255,1)"
+      }
+    },
+    {
+      "id": "US_Water_Area_2010",
+      "source": "socialexplorer",
+      "source-layer": "952",
+      "type": "fill",
+      "minzoom": 12,
+      "metadata": {
+        "socialexplorer": {
+          "title": "US Water Area (2010)"
+        }
+      },
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(255,255,255,1)"
+      }
+    },
+    {
+      "id": "Landmark_Areas_2010",
+      "source": "socialexplorer",
+      "source-layer": "957",
+      "type": "fill",
+      "minzoom": 6,
+      "metadata": {
+        "socialexplorer": {
+          "title": "US Landmark Area (2010)",
+		  "hidden-when-satellite": true
+        }
+      },
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(222,222,222)",
+        "fill-outline-color": "rgba(144,144,144,0.4)"
+      },
+      "paint.shaded": {
+        "fill-color": "rgba(222,222,222,0)",
+        "fill-outline-color": "rgba(144,144,144,0)"
+      }
+    },
+    {
+      "id": "Satellite View",
+      "type": "raster",
+      "source": "mapbox-satellite",
+      "metadata": {
+        "socialexplorer": {
+          "layer-type": "satellite"
+        }
+      },
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "Street_2010_outer",
+      "source": "socialexplorer",
+      "source-layer": "10552",
+      "type": "line",
+      "minzoom": 10,
+      "maxzoom": 21,
+      "auto-source": [
+        {
+          "id": "Streets_Primary_Secondary_2010",
+          "minzoom": 10,
+          "maxzoom": 12,
+          "source": "socialexplorer",
+          "source-layer": "10552",
+          "type": "line"
+        },
+        {
+          "id": "Streets_all_2010",
+          "minzoom": 12,
+          "maxzoom": 21,
+          "source": "socialexplorer",
+          "source-layer": "10526",
+          "type": "line"
+        }
+      ],
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Streets",
+          "title": "Streets: (2010)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(214,214,214,1)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              17,
+              7
+            ],
+            [
+              21,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Street_2010_Inner",
+      "source": "socialexplorer",
+      "source-layer": "10552",
+      "type": "line",
+      "minzoom": 10,
+      "maxzoom": 21,
+      "auto-source": [
+        {
+          "id": "Streets_Primary_Secondary_2010_Inner",
+          "minzoom": 10,
+          "maxzoom": 12,
+          "source": "socialexplorer",
+          "source-layer": "10552",
+          "type": "line"
+        },
+        {
+          "id": "Streets_all_2010_Inner",
+          "minzoom": 12,
+          "maxzoom": 21,
+          "source": "socialexplorer",
+          "source-layer": "10526",
+          "type": "line"
+        }
+      ],
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Streets",
+          "title": "Streets: (2010)",
+          "blend-zoom": 8,
+          "layer-type": "streets"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(225,225,225,1)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              16,
+              3
+            ],
+            [
+              17,
+              4
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              21,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Add_Primary_and_Secondary_Streets_outer",
+      "source": "socialexplorer",
+      "source-layer": "10552",
+      "type": "line",
+      "minzoom": 8,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Add_Primary_and_Secondary_Streets",
+          "title": "Show: Primary and Secondary Streets (2010)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(214,214,214,1)",
+        "line-width": {
+          "stops": [
+            [
+              8,
+              3
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              17,
+              7
+            ],
+            [
+              21,
+              10
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,130,1)"
+      }
+    },
+    {
+      "id": "Add_Primary_and_Secondary_Streets_inner",
+      "source": "socialexplorer",
+      "source-layer": "10552",
+      "type": "line",
+      "minzoom": 8,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Add_Primary_and_Secondary_Streets",
+          "title": "Show: Primary and Secondary Streets (2010)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(225,225,225,1)",
+        "line-width": {
+          "stops": [
+            [
+              8,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              16,
+              3
+            ],
+            [
+              17,
+              4
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              21,
+              7
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,130,1)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_Tracts",
+      "source": "socialexplorer",
+      "source-layer": "1169",
+      "type": "line",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "hide-on-preferred-summary-levels": [
+            "SL040",
+            "SL050",
+            "SL150",
+            "SL160",
+            "SL310",
+            "SL500",
+            "SL950",
+            "SL960",
+            "SL970",
+            "SL610",
+            "SL620",
+            "SL100",
+            "SL860",
+            "SL795"
+          ],
+          "layer-group-id": "2016_Boundaries_Tracts",
+          "title": "Boundaries: Census Tracts (2016)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL140": {
+              "minzoom": 9
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.2)",
+        "line-width": {
+          "stops": [
+            [
+              9,
+              0.2
+            ],
+            [
+              10,
+              0.5
+            ],
+            [
+              11,
+              0.5
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              21,
+              2
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.2)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_Counties",
+      "source": "socialexplorer",
+      "source-layer": "15294",
+      "type": "line",
+      "minzoom": 5,
+      "metadata": {
+        "socialexplorer": {
+          "hide-on-preferred-summary-levels": [
+            "SL040",
+            "SL140",
+            "SL150",
+            "SL860",
+            "SL160",
+            "SL310",
+            "SL500",
+            "SL795",
+            "SL950",
+            "SL960",
+            "SL970",
+            "SL610",
+            "SL620"
+          ],
+          "layer-group-id": "2016_Boundaries_Counties",
+          "title": "Boundaries: Counties (2016)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL050": {
+              "minzoom": 3
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.2)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              1
+            ],
+            [
+              21,
+              2
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_States",
+      "source": "socialexplorer",
+      "source-layer": "10451",
+      "type": "line",
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Boundaries_States",
+          "title": "Boundaries: States"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.3)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              1
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              21,
+              3
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.6)"
+      },
+      "paint.no-summary-level": {
+        "line-dasharray": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "id": "Boundaries: US-Canada; US-Mexico",
+      "source": "socialexplorer",
+      "source-layer": "1027",
+      "type": "line",
+      "maxzoom": 10,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Boundaries: US-Canada; US-Mexico",
+          "title": "Boundaries: US-Canada; US-Mexico"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.5)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              1
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              21,
+              3
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,1)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_Block_Groups",
+      "source": "socialexplorer",
+      "source-layer": "1171",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL150"
+          ],
+          "layer-group-id": "2016_Boundaries_Block_Groups",
+          "title": "Boundaries: Census Block Group (2016)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL150": {
+              "minzoom": 9
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.2)",
+        "line-width": {
+          "base": 1.5,
+          "stops": [
+            [
+              9,
+              0.1
+            ],
+            [
+              10,
+              0.5
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              21,
+              2
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.2)"
+      }
+    },
+    {
+      "id": "2013_5yr_ZCTA5_Boundaries",
+      "source": "socialexplorer",
+      "source-layer": "12362",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL860"
+          ],
+          "layer-group-id": "2013_5yr_ZCTA5_Boundaries",
+          "title": "Boundaries: 5-Digit ZIP Code Tabulation Area (ZCTA5)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL860": {
+              "minzoom": 8
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.2)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.2)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_Place",
+      "source": "socialexplorer",
+      "source-layer": "11616",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL160"
+          ],
+          "layer-group-id": "2016_Boundaries_Place",
+          "title": "Boundaries: Census Place (2016)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL160": {
+              "minzoom": 8
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_MSA",
+      "source": "socialexplorer",
+      "source-layer": "15663",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL310"
+          ],
+          "layer-group-id": "2016_Boundaries_MSA",
+          "title": "Boundaries: Metropolitan Statistical Area (MSA)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL310": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "Boundaries_CD115",
+      "source": "socialexplorer",
+      "source-layer": "15623",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL500"
+          ],
+          "layer-group-id": "Boundaries_CD115",
+          "title": "Boundaries: Congressional Districts (115th)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL500": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_PUMA",
+      "source": "socialexplorer",
+      "source-layer": "10461",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL795"
+          ],
+          "layer-group-id": "2016_Boundaries_PUMA",
+          "title": "Boundaries: Public Use Microdata Area (PUMA) 2016",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL795": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_ELSD",
+      "source": "socialexplorer",
+      "source-layer": "10462",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL950"
+          ],
+          "layer-group-id": "2016_Boundaries_ELSD",
+          "title": "Boundaries: Elementary School District (ELSD)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL950": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_SCSD",
+      "source": "socialexplorer",
+      "source-layer": "10463",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL960"
+          ],
+          "layer-group-id": "2016_Boundaries_SCSD",
+          "title": "Boundaries: Secondary School District (SCSD)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL960": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_Boundaries_UNSD",
+      "source": "socialexplorer",
+      "source-layer": "10496",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL970"
+          ],
+          "layer-group-id": "2016_Boundaries_UNSD",
+          "title": "Boundaries: Unified School District (UNSD)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL970": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_5yr_SLDU_Boundaries",
+      "source": "socialexplorer",
+      "source-layer": "10494",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL610"
+          ],
+          "layer-group-id": "2016_5yr_SLDU_Boundaries",
+          "title": "Boundaries: State Legislative Districts Upper Chambers (SLDU)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL610": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "2016_5yr_SLDL_Boundaries",
+      "source": "socialexplorer",
+      "source-layer": "10495",
+      "type": "line",
+      "minzoom": 21,
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL620"
+          ],
+          "layer-group-id": "2016_5yr_SLDL_Boundaries",
+          "title": "Boundaries: State Legislative Districts Lower Chambers (SLDL)",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL620": {
+              "minzoom": 5
+            }
+          }
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "rgba(144,144,144,0.3)"
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,255,0.3)"
+      }
+    },
+    {
+      "id": "Landmark_Labels_2010_Museum",
+      "source": "socialexplorer",
+      "source-layer": "957p",
+      "type": "symbol",
+      "minzoom": 13,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Landmark_Labels_2010",
+          "title": "Labels: Landmarks (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-offset": [
+          0,
+          0.1
+        ],
+        "text-anchor": "left",
+        "icon-image": "museum",
+        "icon-offset": [
+          -10,
+          0
+        ],
+        "text-justify": "left",
+        "text-max-width": 5,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              11,
+              9
+            ],
+            [
+              21,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      },
+      "filter": [
+        "==",
+        "MTFCC",
+        "K2545"
+      ]
+    },
+    {
+      "id": "Landmark_Labels_2010_School",
+      "source": "socialexplorer",
+      "source-layer": "957p",
+      "type": "symbol",
+      "minzoom": 13,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Landmark_Labels_2010",
+          "title": "Labels: Landmarks (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-anchor": "left",
+        "icon-image": "school",
+        "icon-offset": [
+          -10,
+          0
+        ],
+        "text-justify": "left",
+        "text-max-width": 5,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              11,
+              9
+            ],
+            [
+              21,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      },
+      "filter": [
+        "in",
+        "MTFCC",
+        "K2540",
+        "K2543",
+        "K1241"
+      ]
+    },
+    {
+      "id": "Landmark_Labels_2010_Airplane",
+      "source": "socialexplorer",
+      "source-layer": "957p",
+      "type": "symbol",
+      "minzoom": 11,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Landmark_Labels_2010",
+          "title": "Labels: Landmarks (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-anchor": "left",
+        "icon-image": "airplane",
+        "icon-offset": [
+          -10,
+          0
+        ],
+        "text-justify": "left",
+        "text-max-width": 5,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              11,
+              9
+            ],
+            [
+              21,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      },
+      "filter": [
+        "in",
+        "MTFCC",
+        "K2451",
+        "K2456",
+        "K2457"
+      ]
+    },
+    {
+      "id": "Landmark_Labels_2010_Forest",
+      "source": "socialexplorer",
+      "source-layer": "957p",
+      "type": "symbol",
+      "minzoom": 13,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Landmark_Labels_2010",
+          "title": "Labels: Landmarks (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-offset": [
+          0,
+          0.2
+        ],
+        "text-anchor": "left",
+        "icon-image": "forest",
+        "icon-offset": [
+          -10,
+          0
+        ],
+        "text-justify": "left",
+        "text-max-width": 5,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              11,
+              9
+            ],
+            [
+              21,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      },
+      "filter": [
+        "in",
+        "MTFCC",
+        "K2180",
+        "K2181",
+        "K2183",
+        "K2184",
+        "K2185",
+        "K2186",
+        "K2187",
+        "K2188",
+        "K2190"
+      ]
+    },
+    {
+      "id": "2016_Add_Boundaries_CD115_outer",
+      "source": "socialexplorer",
+      "source-layer": "15623",
+      "type": "line",
+      "minzoom": 5,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_CD115",
+          "title": "Show: Congressional Districts (115th)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.5)",
+        "line-width": {
+          "stops": [
+            [
+              8,
+              2
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              21,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "2016_Add_Boundaries_CD115_inner",
+      "source": "socialexplorer",
+      "source-layer": "15623",
+      "type": "line",
+      "minzoom": 5,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_CD115",
+          "title": "Show: Congressional Districts (115th)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(255,255,130,1)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              21,
+              6
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,130,1)"
+      }
+    },
+    {
+      "id": "2016_Add_CD115_Labels",
+      "source": "socialexplorer",
+      "source-layer": "15623p",
+      "type": "symbol",
+      "minzoom": 5,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_CD115",
+          "title": "Show: Congressional Districts (115th)"
+        }
+      },
+      "layout": {
+        "text-field": "{Geo_NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 9,
+        "visibility": "none",
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              9,
+              12
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              15,
+              15
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              21,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 1,
+        "icon-opacity": 1,
+        "text-color": "#ffff82",
+        "text-halo-color": "#000000"
+      }
+    },
+    {
+      "id": "2011_Add_Boundaries_ZCTA5_outer",
+      "source": "socialexplorer",
+      "source-layer": "12362",
+      "type": "line",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2011_Add_Boundaries_ZCTA5",
+          "title": "Show: 5-Digit ZIP Code Tabulation Area (ZCTA5)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.5)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              21,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "2011_Add_Boundaries_ZCTA5_inner",
+      "source": "socialexplorer",
+      "source-layer": "12362",
+      "type": "line",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2011_Add_Boundaries_ZCTA5",
+          "title": "Show: 5-Digit ZIP Code Tabulation Area (ZCTA5)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(255,255,130,1)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              21,
+              6
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,130,1)"
+      }
+    },
+    {
+      "id": "2011_Add_ZCTA5_Labels",
+      "source": "socialexplorer",
+      "source-layer": "12362p",
+      "type": "symbol",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2011_Add_Boundaries_ZCTA5",
+          "title": "Show: 5-Digit ZIP Code Tabulation Area (ZCTA5)"
+        }
+      },
+      "layout": {
+        "text-field": "{ZCTA5CE10}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "visibility": "none",
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              9,
+              12
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              15,
+              15
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              21,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 1,
+        "icon-opacity": 1,
+        "text-color": "#ffff82",
+        "text-halo-color": "#000000"
+      }
+    },
+    {
+      "id": "2016_Add_Boundaries_Place_outer",
+      "source": "socialexplorer",
+      "source-layer": "11616",
+      "type": "line",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_Place",
+          "title": "Show: Census Place (2016)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(144,144,144,0.5)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              21,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "2016_Add_Boundaries_Place_inner",
+      "source": "socialexplorer",
+      "source-layer": "11616",
+      "type": "line",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_Place",
+          "title": "Show: Census Place (2016)"
+        }
+      },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(255,255,130,1)",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              21,
+              6
+            ]
+          ]
+        }
+      },
+      "paint.shaded": {
+        "line-color": "rgba(255,255,130,1)"
+      }
+    },
+    {
+      "id": "2016_Add_Place_Labels",
+      "source": "socialexplorer",
+      "source-layer": "11616p",
+      "type": "symbol",
+      "minzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "2016_Add_Boundaries_Place",
+          "title": "Show: Census Place (2016)"
+        }
+      },
+      "layout": {
+        "text-field": "{Geo_QName}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 5,
+        "visibility": "none",
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              9,
+              12
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              15,
+              15
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              21,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 1,
+        "icon-opacity": 1,
+        "text-color": "#ffff82",
+        "text-halo-color": "#000000"
+      }
+    },
+    {
+      "id": "Streets_2010_Labels",
+      "source": "socialexplorer",
+      "source-layer": "10552p",
+      "type": "symbol",
+      "minzoom": 10,
+      "maxzoom": 21,
+      "auto-source": [
+        {
+          "id": "Streets_2010_Primary_Secondary_Labels",
+          "source": "socialexplorer",
+          "source-layer": "10552p",
+          "type": "symbol",
+          "minzoom": 10,
+          "maxzoom": 14
+        },
+        {
+          "id": "Streets_all_2010_Labels",
+          "source": "socialexplorer",
+          "source-layer": "10526p",
+          "type": "symbol",
+          "minzoom": 14,
+          "maxzoom": 21
+        }
+      ],
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Primary and Secondary Labels",
+          "title": "Labels: Streets (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "symbol-placement": "line",
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              10,
+              10
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              13,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              15,
+              11
+            ],
+            [
+              21,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "text-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      }
+    },
+    {
+      "id": "Add_Primary_and_Secondary_Labels",
+      "source": "socialexplorer",
+      "source-layer": "10552p",
+      "type": "symbol",
+      "minzoom": 8,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Add_Primary_and_Secondary_Streets",
+          "title": "Show: Primary and Secondary Streets (2010)"
+        }
+      },
+      "layout": {
+        "text-field": "{FULLNAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "symbol-placement": "line",
+        "visibility": "none",
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "text-opacity": 1,
+        "text-color": "#ffffcc",
+        "text-halo-color": "#000000"
+      }
+    },
+    {
+      "id": "Cities_US_Other",
+      "source": "socialexplorer",
+      "source-layer": "10604",
+      "type": "symbol",
+      "minzoom": 11,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-size": 12,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      },
+      "filter": [
+        "none"
+      ]
+    },
+    {
+      "id": "Cities_US_Small_Cities_1",
+      "source": "socialexplorer",
+      "source-layer": "10610",
+      "type": "symbol",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-size": 11,
+        "symbol-avoid-edges": true
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Small_Cities_2",
+      "source": "socialexplorer",
+      "source-layer": "10611",
+      "type": "symbol",
+      "minzoom": 8,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              21,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "small_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Medium_Cities_1",
+      "source": "socialexplorer",
+      "source-layer": "10609",
+      "type": "symbol",
+      "minzoom": 7,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              21,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "medium_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Medium_Cities_2",
+      "source": "socialexplorer",
+      "source-layer": "10608",
+      "type": "symbol",
+      "minzoom": 6,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              21,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "medium_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Medium_Cities_3",
+      "source": "socialexplorer",
+      "source-layer": "10607",
+      "type": "symbol",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              21,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "medium_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Major_Cities_1",
+      "source": "socialexplorer",
+      "source-layer": "10606",
+      "type": "symbol",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              9,
+              13
+            ],
+            [
+              11,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "major_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_US_Major_Cities_2",
+      "source": "socialexplorer",
+      "source-layer": "10605",
+      "type": "symbol",
+      "minzoom": 4,
+      "maxzoom": 14,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "Cities_US",
+          "title": "Labels: US Cities"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              9,
+              13
+            ],
+            [
+              11,
+              14
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              "major_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_Capitals_US",
+      "source": "socialexplorer",
+      "source-layer": "10482",
+      "type": "symbol",
+      "minzoom": 4,
+      "maxzoom": 10,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Labels: US Capitals"
+        }
+      },
+      "layout": {
+        "text-field": "{NAME_1}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 5,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              9,
+              13
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              10,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              "top"
+            ],
+            [
+              10,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              "capital_city"
+            ],
+            [
+              10,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Block_Group_Labels_2016_5yr",
+      "source": "socialexplorer",
+      "source-layer": "1171p",
+      "type": "symbol",
+      "metadata": {
+        "socialexplorer": {
+          "show-on-preferred-summary-levels": [
+            "SL150"
+          ],
+          "title": "Show: Census Block Group Labels",
+          "zoom-range-on-preferred-summary-levels": {
+            "SL150": {
+              "minzoom": 12
+            }
+          }
+        }
+      },
+      "layout": {
+        "text-field": "{Geo_QName}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 4,
+        "visibility": "none",
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              11
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              16,
+              13
+            ],
+            [
+              18,
+              14
+            ],
+            [
+              21,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Tract_Labels_2016",
+      "source": "socialexplorer",
+      "source-layer": "1169p",
+      "type": "symbol",
+      "minzoom": 10,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Show: Census Tracts Labels"
+        }
+      },
+      "layout": {
+        "text-field": "{NAMELSAD10}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "visibility": "none",
+        "text-max-width": 4,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              11
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              16,
+              13
+            ],
+            [
+              18,
+              14
+            ],
+            [
+              21,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "County_Labels_2016",
+      "source": "socialexplorer",
+      "source-layer": "15294p",
+      "type": "symbol",
+      "minzoom": 8,
+      "maxzoom": 9,
+      "metadata": {
+        "socialexplorer": {
+          "hide-on-preferred-summary-levels": [
+            "SL040",
+            "SL140",
+            "SL150",
+            "SL860",
+            "SL160",
+            "SL310",
+            "SL500",
+            "SL795",
+            "SL950",
+            "SL960",
+            "SL970",
+            "SL610",
+            "SL620"
+          ],
+          "layer-group-id": "County_Labels_2016",
+          "title": "Labels: US Counties (2016)"
+        }
+      },
+      "layout": {
+        "text-field": "{Geo_QName}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 5,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              8,
+              12
+            ],
+            [
+              21,
+              13
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "State_Labels_2016",
+      "source": "socialexplorer",
+      "source-layer": "10451p",
+      "type": "symbol",
+      "minzoom": 4,
+      "maxzoom": 8,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Labels: US States (2016)"
+        }
+      },
+      "layout": {
+        "text-field": "{Geo_QName}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 5,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              21,
+              22
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "US_Label",
+      "source": "socialexplorer",
+      "source-layer": "1229",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 3,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Labels: US"
+        }
+      },
+      "layout": {
+        "text-field": "{ADMIN}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              10
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      }
+    },
+    {
+      "id": "World_Water_Labels",
+      "source": "socialexplorer",
+      "source-layer": "1220",
+      "type": "symbol",
+      "minzoom": 6,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Water_Labels",
+          "title": "Labels: World Water"
+        }
+      },
+      "layout": {
+        "text-field": "{Name}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              6,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "World_Lake_Labels",
+      "source": "socialexplorer",
+      "source-layer": "1071p",
+      "type": "symbol",
+      "minzoom": 5,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Lake_Labels",
+          "title": "Labels: World Lakes"
+        }
+      },
+      "layout": {
+        "text-field": "{Name1}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              6,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              18
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-blur": 2,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Cities_Capitals_World",
+      "source": "socialexplorer",
+      "source-layer": "1038",
+      "type": "symbol",
+      "minzoom": 4,
+      "maxzoom": 8,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Labels: World Capitals"
+        }
+      },
+      "layout": {
+        "text-field": "{CAPITAL}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              12
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              [
+                0,
+                0.8
+              ]
+            ],
+            [
+              8,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-anchor": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              "top"
+            ],
+            [
+              8,
+              "center"
+            ]
+          ]
+        },
+        "icon-image": {
+          "base": 1.5,
+          "stops": [
+            [
+              7,
+              "capital_city"
+            ],
+            [
+              8,
+              ""
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      }
+    },
+    {
+      "id": "World_Countries_Labels_Other",
+      "source": "socialexplorer",
+      "source-layer": "1388",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 7,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Countries_Labels",
+          "title": "Labels: World Countries"
+        }
+      },
+      "layout": {
+        "text-field": "{ADMIN}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      },
+      "filter": [
+        "none",
+        [
+          "==",
+          "TYPE",
+          "Country"
+        ],
+        [
+          "==",
+          "TYPE",
+          "Sovereign country"
+        ],
+        [
+          "==",
+          "TYPE",
+          "Dependency"
+        ],
+        [
+          "==",
+          "ADMIN",
+          "United States of America"
+        ]
+      ]
+    },
+    {
+      "id": "World_Countries_Labels_Country",
+      "source": "socialexplorer",
+      "source-layer": "1388",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 7,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Countries_Labels",
+          "title": "Labels: World Countries"
+        }
+      },
+      "layout": {
+        "text-field": "{ADMIN}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      },
+      "filter": [
+        "==",
+        "TYPE",
+        "Country"
+      ]
+    },
+    {
+      "id": "World_Countries_Labels_Sovereign_Country",
+      "source": "socialexplorer",
+      "source-layer": "1388",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 7,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Countries_Labels",
+          "title": "Labels: World Countries"
+        }
+      },
+      "layout": {
+        "text-field": "{ADMIN}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      },
+      "filter": [
+        "==",
+        "TYPE",
+        "Sovereign country"
+      ]
+    },
+    {
+      "id": "World_Countries_Labels_Dependency",
+      "source": "socialexplorer",
+      "source-layer": "1388",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 7,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "World_Countries_Labels",
+          "title": "Labels: World Countries"
+        }
+      },
+      "layout": {
+        "text-field": "{ADMIN}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 6,
+        "symbol-avoid-edges": true,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#cfcfcf"
+      },
+      "filter": [
+        "==",
+        "TYPE",
+        "Dependency"
+      ]
+    },
+    {
+      "id": "State_Labels_2000_Abrev",
+      "source": "socialexplorer",
+      "source-layer": "534p",
+      "type": "symbol",
+      "minzoom": 2,
+      "maxzoom": 4,
+      "metadata": {
+        "socialexplorer": {
+          "layer-group-id": "State_Labels_2000_Abrev",
+          "title": "Labels: US State Abbreviations (2000)"
+        }
+      },
+      "layout": {
+        "text-field": "{ABBREV}",
+        "text-padding": 0,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "Labels: Continents",
+      "source": "socialexplorer",
+      "source-layer": "1231",
+      "type": "symbol",
+      "minzoom": 1,
+      "maxzoom": 11,
+      "metadata": {
+        "socialexplorer": {
+          "title": "Labels: Continents"
+        }
+      },
+      "layout": {
+        "text-field": "{Name}",
+        "text-padding": 2,
+        "text-font": [
+          "arial-regular"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-size": {
+          "base": 1.5,
+          "stops": [
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              7,
+              20
+            ],
+            [
+              11,
+              22
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-width": 0.5,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 1,
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff"
+      }
+    }
+  ]
+}
